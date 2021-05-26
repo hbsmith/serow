@@ -73,7 +73,7 @@ the provided diagrams. Help text below:
 The script can also provide a combined set of rules for each reaction across all modules. This is 
 basically just a union of all sets associated with each reaction.
 
-Modules whose definitions are made up of 
+Modules whose definitions are made up of other modules are not included.
 
 ############################################
 USAGE
