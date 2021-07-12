@@ -280,10 +280,9 @@ def get_r_to_k_rules(mid, module_entry_dict, calculated_module_dict):
         rids = re.findall(r'[R]\d{5}',v)
         for rid in rids:
             if rid not in local_r_to_k_dict:
-                local_r_to_k_dict[rid] = kids
+                local_r_to_k_dict[rid] = copy.copy(kids)
             else:
-                for kid in kids:
-                    local_r_to_k_dict[rid].append(kid)
+                local_r_to_k_dict[rid] += kids
 
     ## Coerce into rule sets
     local_r_to_k_dict_validated = dict()
