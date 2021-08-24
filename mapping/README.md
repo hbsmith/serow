@@ -39,7 +39,7 @@ Second, reactions `R11816` and `R11817` are no longer in `map_rn2ko_viaKO_1minus
 Now KEGG shows them as being associated with both `K07226` and `K07215`. So they now fall into the category of reactions which need to be manually mapped. 
 
 Third, there are now a number of new reactions in the `map_rn2ko_viaKO_1minus` category: `{'R09797', 'R12760', 'R12757', 'R12787', 'R12790', 'R12769', 'R12770', 'R12768', 'R12775'}`. 
-- 'R09797' used to only be associated to KO via EC, but now is directly associated to `K17948`.
+- `R09797` used to only be associated to KO via EC, but now is directly associated to `K17948`.
 - The rest of the reactions appear to all be new reactions recently added to KEGG
 
 Lastly, some nans (which were never used) were removed from the new mapping.
